@@ -2,8 +2,8 @@
 BSD 2-Clause License
 
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince ]
-Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (C) 2022-2023, kazuya kun, [ https://github.com/kazuya07 ]
+Copyright (c) 2022-2023, cosmos network, [ https://github.com/kazuyakun07/miku-nakano-robot45 ]
 
 All rights reserved.
 
@@ -126,7 +126,7 @@ PM_START_TEXT = """
 *Meow Meow, Don't Touch Me Without My Permission!*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ *Uptime:* `{}`
-❍ `{}` *Users, Across* `{}` *Chats.*
+❍ `{}` *46444, Across* `{}` *2056.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The Guidelines Button Below To Know My Abilities ××
 """
