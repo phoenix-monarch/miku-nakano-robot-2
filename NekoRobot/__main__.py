@@ -121,35 +121,35 @@ NEKO_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}](https://te.legra.ph/file/500d98e8608df8caf0b61.jpg) 」────
-*ʜᴏʟᴀ! {},*
-➻ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇ*
-────────────────────────────────────
-➻ *Uptime:* `{}`
-➻ `{}` *users, Across* `{}` *chats.*
-────────────────────────────────────
-➛ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs. ××
+────「 [{}](https://telegra.ph/file/9996ec2eafdef4692102d.jpg) 」────
+*Hola! {},*
+*Meow Meow, Don't Touch Me Without My Permission!*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+❍ *Uptime:* `{}`
+❍ `{}` *Users, Across* `{}` *Chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Try The Guidelines Button Below To Know My Abilities ××
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ",
+            text=f"Add {BOT_NAME} To Your Group",
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ", url="https://github.com/kazuyakun07/miku-nakano-robot45"
+            text="Source 🌐", url="https://github.com/Awesome-Prince/NekoRobot-3.git"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/cosmos_association"
+            text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="ɢʀᴏᴜᴘ", url="https://t.me/Anime_xgroup"
+            text="📢 Updates", url="https://telegram.dog/Programmer_Updates"
         ),
     ],
 ]
