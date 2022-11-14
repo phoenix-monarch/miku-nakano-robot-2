@@ -45,7 +45,7 @@ from NekoRobot.modules.sql.afk_sql import check_afk_status, is_afk
 from NekoRobot.modules.sql.global_bans_sql import is_user_gbanned
 from NekoRobot.modules.sql.users_sql import get_user_num_chats
 
-NEKO_IMG = "https://te.legra.ph/file/500d98e8608df8caf0b61.jpg"
+NEKO_IMG = "https://telegra.ph/file/a21731c0c4c7f27a3ec16.jpg"
 
 
 def no_by_per(totalhp, percentage):
@@ -242,10 +242,10 @@ def info(update: Update, context: CallbackContext):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ʜᴇᴀʟᴛʜ", url="https://t.me/AsunaYuukiXUpdates/9"
+                text="Health", url="https://t.me/Programmer_Updates/10"
             ),
             InlineKeyboardButton(
-                text="ᴅɪsᴀsᴛᴇʀs", url="https://t.me/AsunaYuukiXUpdates/10"
+                text="Disasters", url="https://t.me/Programmer_Updates/11"
             ),
         ],
     ]
@@ -275,18 +275,18 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「• Appraisal results • 」"
-        f"• ➻ ᴜsᴇʀ ɪᴅ: <code>{user.id}</code>\n"
-        f"• ➻ ғɪʀsᴛ ɴᴀᴍᴇ:  {html.escape(user.first_name)}"
+        f"╒═══「<b>• Appraisal results •</b> 」\n"
+        f"• ID: <code>{user.id}</code>\n"
+        f"• First Name: {html.escape(user.first_name)}"
     )
 
-    if user.➻ ʟᴀsᴛ ɴᴀᴍᴇ:
+    if user.last_name:
         text += f"\n• Last Name: {html.escape(user.last_name)}"
 
-    if user.➻ ᴜsᴇʀɴᴀᴍᴇ:
+    if user.username:
         text += f"\n• Username: @{html.escape(user.username)}"
 
-    text += f"\n• ➻ ʟɪɴᴋ: {mention_html(user.id, 'link')}"
+    text += f"\n• Userlink: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n• Presence: <code>{}</code>"
@@ -317,19 +317,19 @@ def info(update: Update, context: CallbackContext):
         pass  # don't crash if api is down somehow...
 
     if user.id == OWNER_ID:
-        text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴜsᴇʀ ɪs ɢᴏᴅ."
+        text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴘᴇʀsᴏɴ ɪs 'ɢᴏᴅ'."
     elif user.id in DEV_USERS:
         text += "\n\nᴛʜɪs ᴜsᴇʀ ɪs ᴍᴇᴍʙᴇʀ ᴏғ 'ᴄᴏsᴍᴏs ᴀssᴏᴄɪᴀᴛɪᴏɴ'."
     elif user.id in DRAGONS:
         text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴘᴇʀsᴏɴ ɪs 'ᴅʀᴀɢᴏɴ'."
     elif user.id in DEMONS:
-        text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴘᴇʀsᴏɴ ɪs 'ᴅᴇᴍᴏɴ'."
+        text += "\n\nThe Disaster level of this person is 'Demon'."
     elif user.id in TIGERS:
-        text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴘᴇʀsᴏɴ ɪs 'ᴛɪɢᴇʀ'."
+        text += "\n\nThe Disaster level of this person is 'Tiger'."
     elif user.id in WOLVES:
-        text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴘᴇʀsᴏɴ ɪs 'ᴡᴏʟғ'."
+        text += "\n\nThe Disaster level of this person is 'Wolf'."
     elif user.id == 5561111332:
-        text += "\n\nSenorita Is Girlfriend Of @X_E_N_0_X."
+        text += "\n\nSenorita Is Girlfriend Of @Its_IZ_PRINCE_xD."
 
     try:
         user_member = chat.get_member(user.id)
@@ -460,16 +460,16 @@ def stats(update, context):
         update.effective_message.reply_photo(
             NEKO_IMG,
             status
-            + "\n*ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs*:\n"
+            + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) | [ᴜᴘᴅᴀᴛᴇs](https://t.me/AsunaYuukiXSupport)\n\n"
-            + "\n╘══「 ʙʏ [ᴄᴏsᴍᴏs ɴᴇᴛᴡᴏʀᴋ](https://t.me/cosmos_association) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/Programmer_Updates)\n\n"
+            + "\n╘══「 by [Programmer • Network](https://t.me/Programmer_Network) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ʀᴇᴘᴏ", url=https://github.com/kazuyakun07/miku-nakano-robot45""
+                            text="Repo", url="github.com/Awesome-Prince/NekoRobot-3"
                         )
                     ]
                 ]
@@ -483,9 +483,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n [sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) | ✦ [ᴜᴘᴅᴀᴛᴇs](https://t.me/AsunaYuukiXUpdates)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/Programmer_Updates)\n\n"
                 )
-                + "╘══「 ʙʏ [ᴄᴏsᴍᴏs ɴᴇᴛᴡᴏʀᴋ](https://t.me/cosmos_association) 」\n"
+                + "╘══「 by [Programmer • Network](https://t.me/Programmer_Network) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
