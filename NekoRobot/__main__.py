@@ -111,38 +111,45 @@ def get_readable_time(seconds: int) -> str:
 
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
+
+NEKO_STICKERS = (
+    "CAACAgUAAxkBAAIIW2NL5v9F9hUom4xmsgNYb63SEfZZAAIZBgACYAF5VIerYoMcSln8KgQ",
+    "CAACAgUAAxkBAAIIT2NL5tVmdAO3n1o3cp9Jic9LkqJvAAK7AgACoU3RVLpdwYfQPmS9KgQ",
+    "CAACAgUAAxkBAAIIUGNL5tVNd0rwdoMv-uDVcZ3hHgwlAAIwAwACP9jQVMv2AfU-DvBfKgQ",
+    "CAACAgUAAxkBAAIIUmNL5tUzCtvS5E-XR8h3tFMSqVu7AAIGAwACNZnYVOTUhlBiHTQGKgQ",
+    "CAACAgUAAxkBAAIIUWNL5tVBEQAB2gWLSq0ymEPeAj5kmQAC3QEAAuu92VSPj3UkCiNvfioE",
 )
 
 PM_START_TEXT = """
 ────「 [{}](https://te.legra.ph/file/500d98e8608df8caf0b61.jpg) 」────
-*Hola! {},*
-*Meow Meow, Don't Touch Me Without My Permission!*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime:* `{}`
-❍ `{65566}` *users, Across* `{4584}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Guidelines Button Below To Know My Abilities ××
+*ʜᴏʟᴀ! {},*
+➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇ*
+────────────────────────────────────
+➻ *Uptime:* `{}`
+➻ `{65566}` *users, Across* `{4584}` *chats.*
+────────────────────────────────────
+➛ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs. ××
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"Add {BOT_NAME} To Your Group",
+            text=f"ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ",
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source ", url="https://github.com/kazuyakun07/miku-nakano-robot45"
+            text="sᴏᴜʀᴄᴇ ", url="https://github.com/kazuyakun07/miku-nakano-robot45"
         ),
     ],
     [
         InlineKeyboardButton(
-            text=" Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
+            text=" ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/cosmos_association"
         ),
         InlineKeyboardButton(
-            text=" Updates", url="https://t.me/AsunaYuukiXUpdates"
+            text=" ɢʀᴏᴜᴘ", url="https://t.me/Anime_xgroup"
         ),
     ],
 ]
