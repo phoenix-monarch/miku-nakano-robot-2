@@ -123,7 +123,7 @@ NEKO_STICKERS = (
 PM_START_TEXT = """
 ────「 [{}](https://te.legra.ph/file/500d98e8608df8caf0b61.jpg) 」────
 *ʜᴏʟᴀ! {},*
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇ*
+➻ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇ*
 ────────────────────────────────────
 ➻ *Uptime:* `{}`
 ➻ `{}` *users, Across* `{}` *chats.*
@@ -146,10 +146,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text=" ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/cosmos_association"
+            text="ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/cosmos_association"
         ),
         InlineKeyboardButton(
-            text=" ɢʀᴏᴜᴘ", url="https://t.me/Anime_xgroup"
+            text="ɢʀᴏᴜᴘ", url="https://t.me/Anime_xgroup"
         ),
     ],
 ]
