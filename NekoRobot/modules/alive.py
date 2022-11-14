@@ -37,9 +37,9 @@ from NekoRobot import tbot as neko
 from NekoRobot.events import register
 
 edit_time = 5
-""" =======================Neko====================== """
-file1 = "https://telegra.ph/file/cd7aad1ea310312886358.png"
-file2 = "https://telegra.ph/file/48a97320463caa61dba3d.png"
+""" =======================ᴍɪᴋᴜ====================== """
+file1 = "https://te.legra.ph/file/500d98e8608df8caf0b61.jpg"
+file2 = "https://telegra.ph/file/b04d5fd0fb0c79514e6bc.jpg"
 file3 = "https://telegra.ph/file/2295a7207495eccbbe298.png"
 file4 = "https://telegra.ph/file/67e0bf231a97cd2e364ea.png"
 file5 = "https://telegra.ph/file/990684ecd3d119fa9fec6.png"
@@ -78,7 +78,7 @@ async def hmm(yes):
     NekoX += f"**♡ Python-telegram-bot Version :** `{ptb}`\n\n"
     NekoX += f"**♡ Telethon Version :** `{tlhver}`\n\n"
     NekoX += f"**♡ Pyrogram Version :** `{pyrover}`\n\n"
-    NekoX += "**♡ My Master :** [LovelyPrince](https://t.me/Its_IZ_PRINCE_xD) "
+    NekoX += "**♡ ᴍʏ ᴍᴀsᴛᴇʀ :** [кαzυуα кυη](https://t.me/X_E_N_0_X) "
     NekoX += f"Thanks For Adding Me In {yes.chat.title}"
     BUTTON = [
         [
