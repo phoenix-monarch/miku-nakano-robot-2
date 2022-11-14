@@ -140,7 +140,7 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="🧷 ʜᴇʟᴘ 🧷", callback_data="help_back"),
+        InlineKeyboardButton(text="🌹 ʜᴇʟᴘ 🌹", callback_data="help_back"),
         InlineKeyboardButton(
             text="☁️ sᴏᴜʀᴄᴇ ☁️", url="https://github.com/kazuyakun07/miku-nakano-robot45"
         ),
