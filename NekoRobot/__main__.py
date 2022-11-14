@@ -123,6 +123,7 @@ NEKO_STICKERS = (
 PM_START_TEXT = """
 ────「 [{}](https://te.legra.ph/file/f017cb5ded7ce1fa8488c.jpg) 」────
 *ʜᴇʏ! {},*
+
 *➻ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ *Uptime:* `{}`
@@ -134,22 +135,22 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ",
+            text=f"❄️ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ ❄️",
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
         InlineKeyboardButton(text=" ʜᴇʟᴘ", callback_data="help_back"),
         InlineKeyboardButton(
-            text=" sᴏᴜʀᴄᴇ", url="https://github.com/kazuyakun07/miku-nakano-robot45"
+            text="☁️ sᴏᴜʀᴄᴇ ☁️", url="https://github.com/kazuyakun07/miku-nakano-robot45"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/{SUPPORT_CHAT}"
+            text="✨ sᴜᴘᴘᴏʀᴛ ✨", url=f"https://telegram.dog/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="ᴜᴘᴅᴀᴛᴇs", url="https://telegram.dog/AsunaYuukiXUpdates"
+            text="🥀 ɴᴇᴛᴡᴏʀᴋ 🥀", url="https://telegram.dog/cosmos_association"
         ),
     ],
 ]
