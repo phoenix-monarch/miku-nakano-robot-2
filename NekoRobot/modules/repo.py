@@ -50,7 +50,7 @@ Powered By:- @X_E_N_0_X
     BUTTON = [
         [
             Button.url("📢 Repository", "https://github.com/kazuyakun07/miku-nakano-robot45"),
-            Button.url("💻 chit chat", "https://t.me/anime_xgroup"),
+            Button.url("💻 network", "https://dog/anime_xgroup"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
