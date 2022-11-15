@@ -112,44 +112,36 @@ def get_readable_time(seconds: int) -> str:
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
-NEKO_STICKERS = (
-    "CAACAgUAAxkBAAIIW2NL5v9F9hUom4xmsgNYb63SEfZZAAIZBgACYAF5VIerYoMcSln8KgQ",
-    "CAACAgUAAxkBAAIIT2NL5tVmdAO3n1o3cp9Jic9LkqJvAAK7AgACoU3RVLpdwYfQPmS9KgQ",
-    "CAACAgUAAxkBAAIIUGNL5tVNd0rwdoMv-uDVcZ3hHgwlAAIwAwACP9jQVMv2AfU-DvBfKgQ",
-    "CAACAgUAAxkBAAIIUmNL5tUzCtvS5E-XR8h3tFMSqVu7AAIGAwACNZnYVOTUhlBiHTQGKgQ",
-    "CAACAgUAAxkBAAIIUWNL5tVBEQAB2gWLSq0ymEPeAj5kmQAC3QEAAuu92VSPj3UkCiNvfioE",
-)
-
 PM_START_TEXT = """
 ────「 [{}](https://te.legra.ph/file/c912b934cfeee0cb8edbb.jpg) 」────
           
 *Hola! {},*
-*I am an Anime themed advance group management bot with a lot of Cool Features.*
+*I ᴀᴍ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ *Uptime:* {}
-❍ {} *users, across* {} *chats.*
+❍ `{}` *users, across* `{}` *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ××
+➛ ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
 """
 
 buttons = [
     [
         InlineKeyboardButton(
             text="❄️ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ ❄️",
-            url="https://telegram.dog/{BOT_USERNAME}?startgroup=true")
+            url="https://telegram.dog/miku_management_bot?startgroup=true")
     ],
     [
-        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
+        InlineKeyboardButton(text="[► ʜᴇʟᴘ ◄]", callback_data="help_back"),
         InlineKeyboardButton(text="❔ Chit Chat",
                              url="https://telegram.dog/anime_discussion_chats"),
-        InlineKeyboardButton(text="[► Inline ◄]",
-                             switch_inline_query_current_chat=""),
+        InlineKeyboardButton(text="[► ɴᴇᴛᴡᴏʀᴋ ◄]",
+                             url="https://telegram.dog/cosmos_association"),
     ],
     [
-        InlineKeyboardButton(text="🚑 Support",
-                             url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="📢 Updates",
-                             url="https://telegram.dog/devils_chats")
+        InlineKeyboardButton(text="🚑 sᴜᴘᴘᴏʀᴛ",
+                             url=f"https://telegram.dog/devils_chats"),
+        InlineKeyboardButton(text="📢 ᴜᴘᴅᴀᴛᴇs",
+                             url="https://telegram.dog/AsunaYuukiXUpdates")
     ],
 ]
 HELP_STRINGS = """
@@ -163,11 +155,11 @@ HELP_STRINGS = """
 """
 
 GROUP_START_IMG = (
-    "https://te.legra.ph/file/5f272dc498e4cf91faf92.jpg",
-    "https://te.legra.ph/file/9d8190aba9ac3421af488.jpg",
-    "https://te.legra.ph/file/5b1ce336f0c0216224040.jpg",
-    "https://te.legra.ph/file/f1f67047d973f3aea4004.jpg",
-    "https://te.legra.ph/file/c2526c05d65fd2fbfa58b.jpg",
+    "https://te.legra.ph/file/e9507008060d19c02a2b4.jpg",
+    "https://te.legra.ph/file/236c2278ef3e2a448304f.jpg",
+    "https://te.legra.ph/file/4d43a996b2dda4e3221f1.jpg",
+    "https://te.legra.ph/file/1f7f3ae3347b855c49f35.jpg",
+    "https://te.legra.ph/file/a29a71070275a508eae61.jpg",
 )
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
