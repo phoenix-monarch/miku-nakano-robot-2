@@ -1,8 +1,8 @@
 """
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (C) 2022-2023, kazuya kun, [ https://github.com/kazuya07]
+Copyright (c) 2022-2023, cosmos association, [ https://github.com/kazuyakun07/miku-nakano-robot45 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -156,16 +156,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HA to demote this A Rank Hunter to B Rank Hunter"
+        rt += "Requested HA to demote this dragon Rank Hunter to B Rank Hunter"
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a B Rank Hunter.")
+        message.reply_text("This user is already a demon Rank Hunter.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this D Rank Hunter to B Rank Hunter"
+        rt += "Requested HA to promote this tiger Rank Hunter to B Rank Hunter"
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
