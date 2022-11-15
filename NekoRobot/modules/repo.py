@@ -38,7 +38,7 @@ async def awake(event):
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 「 @miku_management_bot 」
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-Here is the Repo Deploy your Own NekoRobot.
+Here is the Repo Deploy your Own telegram bot.
 ⚜️Repo ➤ https://github.com/kazuyakun07/miku-nakano-robot45
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 🔰 Thanks for your support 
