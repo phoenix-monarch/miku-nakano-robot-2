@@ -1,8 +1,8 @@
 """
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/kazuya07]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/kazuyakun07/miku-nakano-robot45 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -28,29 +28,29 @@ from telethon import Button
 from NekoRobot import tbot
 from NekoRobot.events import register
 
-PHOTO = "https://telegra.ph/file/70061cba45ee824dad6f6.jpg"
+PHOTO = "https://te.legra.ph/file/a29a71070275a508eae61.jpg"
 
 
 @register(pattern=("/repo"))
 async def awake(event):
     NEKO = """
-         We Are So Happy To Announce That We Have Public Our NekoRobot Repo. ✨🥀
+         We Are So Happy To Announce That We Have Public Our MikuRobot Repo. ✨🥀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-「@NekoCuteBot」
+「 @miku_management_bot 」
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 Here is the Repo Deploy your Own NekoRobot.
-⚜️Repo ➤ https://github.com/Awesome-Prince/NekoRobot-3.git
+⚜️Repo ➤ https://github.com/kazuyakun07/miku-nakano-robot45
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 🔰 Thanks for your support 
 It's Fully stable Repo so you can deploy and make own Bot.
 ──────────────────
-Powered By:- @Besties_XD
+Powered By:- @X_E_N_0_X
 """
 
     BUTTON = [
         [
-            Button.url("📢 Repository", "https://github.com/Awesome-Prince/NekoRobot-3"),
-            Button.url("💻 Collaborators", "https://telegra.ph/Neko-X-05-23"),
+            Button.url("📢 Repository", "https://github.com/kazuyakun07/miku-nakano-robot45"),
+            Button.url("💻 chit chat", "https://telegra.ph/anime_xgroup"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
