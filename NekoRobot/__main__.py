@@ -121,40 +121,37 @@ NEKO_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}](https://te.legra.ph/file/f017cb5ded7ce1fa8488c.jpg) 」────
-*ʜᴇʏ! {},*
-
-*➻ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.*
+────「 [{}](https://te.legra.ph/file/c912b934cfeee0cb8edbb.jpg) 」────
+          
+*Hola! {},*
+*I am an Anime themed advance group management bot with a lot of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime:* `{}`
-❍ `{}` *Users, Across* `{}` *Chats.*
+❍ *Uptime:* {}
+❍ {} *users, across* {} *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
+➛ Try The Help Buttons Below To Know My Abilities ××
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"❄️ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ ❄️",
-            url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
-        )
+            text="❄️ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ ❄️",
+            url="https://telegram.dog/{BOT_USERNAME}?startgroup=true")
     ],
     [
-        InlineKeyboardButton(text="🌹 ʜᴇʟᴘ 🌹", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="☁️ sᴏᴜʀᴄᴇ ☁️", url="https://github.com/kazuyakun07/miku-nakano-robot45"
-        ),
+        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
+        InlineKeyboardButton(text="❔ Chit Chat",
+                             url="https://telegram.dog/anime_discussion_chats"),
+        InlineKeyboardButton(text="[► Inline ◄]",
+                             switch_inline_query_current_chat=""),
     ],
     [
-        InlineKeyboardButton(
-            text="✨ sᴜᴘᴘᴏʀᴛ ✨", url=f"https://telegram.dog/{SUPPORT_CHAT}"
-        ),
-        InlineKeyboardButton(
-            text="🥀 ɴᴇᴛᴡᴏʀᴋ 🥀", url="https://telegram.dog/cosmos_association"
-        ),
+        InlineKeyboardButton(text="🚑 Support",
+                             url=f"https://telegram.dog/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="📢 Updates",
+                             url="https://telegram.dog/devils_chats")
     ],
 ]
-
 HELP_STRINGS = """
 *Main* commands available:
 ➛ /help: PM's you this message.
