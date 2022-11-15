@@ -45,7 +45,7 @@ from NekoRobot.modules.sql.afk_sql import check_afk_status, is_afk
 from NekoRobot.modules.sql.global_bans_sql import is_user_gbanned
 from NekoRobot.modules.sql.users_sql import get_user_num_chats
 
-NEKO_IMG = "https://te.legra.ph/file/a29a71070275a508eae61.jpg"
+NEKO_IMG = "https://telegra.ph/file/a21731c0c4c7f27a3ec16.jpg"
 
 
 def no_by_per(totalhp, percentage):
@@ -139,7 +139,7 @@ def hpmanager(user):
 
 def make_bar(per):
     done = min(round(per / 10), 10)
-    return "■" * done + "□ " * (10 - done)
+    return "◈" * done + "◇" * (10 - done)
 
 
 def get_id(update: Update, context: CallbackContext):
@@ -204,7 +204,7 @@ async def group_info(event) -> None:
             "Can't for some reason, maybe it is a private one or that I am banned there.",
         )
         return
-msg = f"**ID**: `{entity.id}`"
+    msg = f"**ID**: `{entity.id}`"
     msg += f"\n**Title**: `{entity.title}`"
     msg += f"\n**Datacenter**: `{entity.photo.dc_id}`"
     msg += f"\n**Video PFP**: `{entity.photo.has_video}`"
@@ -222,8 +222,6 @@ msg = f"**ID**: `{entity.id}`"
         msg += f"\n• [{x.id}](tg://user?id={x.id})"
     msg += f"\n\n**Description**:\n`{ch_full.full_chat.about}`"
     await event.reply(msg)
-
-  
 
 
 def gifid(update: Update, context: CallbackContext):
@@ -244,10 +242,10 @@ def info(update: Update, context: CallbackContext):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ʜᴇᴀʟᴛʜ", url="https://t.me/AsunaYuukiXUpdates/9"
+                text="Health", url="https://t.me/Programmer_Updates/10"
             ),
             InlineKeyboardButton(
-                text="ᴅɪsᴀsᴛᴇʀs", url="https://t.me/AsunaYuukiXUpdates/10"
+                text="Disasters", url="https://t.me/Programmer_Updates/11"
             ),
         ],
     ]
@@ -274,7 +272,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>ᴀᴘᴘʀᴀɪsɪɴɢ...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"ㅤ ㅤㅤ      ✦ ᴜsᴇʀ ɪɴғᴏ ✦\n•❅─────✧❅✦❅✧─────❅•\n"
@@ -307,7 +305,7 @@ def info(update: Update, context: CallbackContext):
                     text += _stext.format("Admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
+        text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
 
     try:
         spamwtc = sw.get_ban(int(user.id))
@@ -319,11 +317,11 @@ def info(update: Update, context: CallbackContext):
         pass  # don't crash if api is down somehow...
 
     if user.id == OWNER_ID:
-        text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴘᴇʀsᴏɴ ɪs 'ɢᴏᴅ'."
+        text += "\n\nThe Disaster level of this person is 'God'."
     elif user.id in DEV_USERS:
-        text += "\n\nᴛʜɪs ᴜsᴇʀ ɪs ᴍᴇᴍʙᴇʀ ᴏғ 'ᴄᴏsᴍᴏs ᴀssᴏᴄɪᴀᴛɪᴏɴ'."
+        text += "\n\nThis user is member of 'Heros Association'."
     elif user.id in DRAGONS:
-        text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴘᴇʀsᴏɴ ɪs 'ᴅʀᴀɢᴏɴ'."
+        text += "\n\nThe Disaster level of this person is 'Dragon'."
     elif user.id in DEMONS:
         text += "\n\nThe Disaster level of this person is 'Demon'."
     elif user.id in TIGERS:
@@ -331,7 +329,7 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
     elif user.id == 5561111332:
-        text += "\n\nSenorita Is Girlfriend Of @X_E_N_0_X."
+        text += "\n\nSenorita Is Girlfriend Of @Its_IZ_PRINCE_xD."
 
     try:
         user_member = chat.get_member(user.id)
@@ -356,7 +354,7 @@ def info(update: Update, context: CallbackContext):
 
     if INFOPIC:
         try:
-          profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
+            profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
             context.bot.sendChatAction(chat.id, "upload_photo")
             context.bot.send_photo(
                 chat.id,
