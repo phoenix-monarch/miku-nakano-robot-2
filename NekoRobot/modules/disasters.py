@@ -1,8 +1,8 @@
 """
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, kazuya kun, [ https://github.com/kazuya07]
-Copyright (c) 2022-2023, cosmos association, [ https://github.com/kazuyakun07/miku-nakano-robot45 ]
+Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -156,16 +156,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HA to demote this dragon Rank Hunter to B Rank Hunter"
+        rt += "Requested HA to demote this A Rank Hunter to B Rank Hunter"
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a demon Rank Hunter.")
+        message.reply_text("This user is already a B Rank Hunter.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this tiger Rank Hunter to B Rank Hunter"
+        rt += "Requested HA to promote this D Rank Hunter to B Rank Hunter"
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -543,7 +543,6 @@ __help__ = f"""
 *⚠️ Notice:*
 Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
 Group admins/group owners do not need these commands. 
-
  ╔ *List all special users:*
  •`/aranks`*:* Lists all A Rank Hunters
  •`/branks`*:* Lists all B Rank Hunters
@@ -555,60 +554,49 @@ Group admins/group owners do not need these commands.
  •`/addcrank`*:* Adds a user to C Rank Hunter
  •`/adddrank`*:* Adds a user to D Rank Hunter
  ╚ `Add dev doesnt exist, devs should know how to add themselves`
-
  ╔ *Ping:*
  •`/ping`*:* gets ping time of bot to telegram server
  ╚ `/pingall`*:* gets all listed ping times
-
  ╔ *Broadcast: (Bot owner only)*
  • *Note:* This supports basic markdown
  •`/broadcastall`*:* Broadcasts everywhere
  •`/broadcastusers`*:* Broadcasts too all users
  ╚ `/broadcastgroups`*:* Broadcasts too all groups
-
  ╔ *Groups Info:*
  •`/groups`*:* List the groups with Name, ID, members count as a txt
  •`/leave <ID>`*:* Leave the group, ID must have hyphen
  •`/stats`*:* Shows overall bot stats
  •`/getchats`*:* Gets a list of group names the user has been seen in. Bot owner only
  ╚ `/ginfo username/link/ID`*:* Pulls info panel for entire group
-
  ╔ *Access control:* 
  •`/ignore`*:* Blacklists a user from 
  • using the bot entirely
  •`/notice`*:* Removes user from blacklist
  ╚ `/ignoredlist`*:* Lists ignored users
-
  ╔ *Module loading:*
  •`/listmodules`*:* Prints modules and their names
  •`/unload <name>`*:* Unloads module dynamically
  ╚ `/load <name>`*:* Loads module
-
  ╔ *Speedtest:*
  ╚ `/speedtest`*:* Runs a speedtest and gives you 2 options to choose from, text or image output
-
  ╔ *Global Bans:*
  •`/gban user reason`*:* Globally bans a user
  ╚ `/ungban user reason`*:* Unbans the user from the global bans list
-
  ╔ *Module loading:*
  •`/listmodules`*:* Lists names of all modules
  •`/load modulename`*:* Loads the said module to 
  •  memory without restarting.
  •`/unload modulename`*:* Loads the said module from
  ╚   memory without restarting.memory without restarting the bot 
-
  ╔ *Remote commands:*
  •`/rban user group`*:* Remote ban
  •`/runban user group`*:* Remote un-ban
  •`/rpunch user group`*:* Remote punch
  •`/rmute user group`*:* Remote mute
  ╚ `/runmute user group`*:* Remote un-mute
-
  ╔ *Windows self hosted only:*
  •`/reboot`*:* Restarts the bots service
  ╚ `/gitpull`*:* Pulls the repo and then restarts the bots service
-
  ╔ *Chatbot:* 
  ╚ `/listaichats`*:* Lists the chats the chatmode is enabled in
  
@@ -626,7 +614,6 @@ Group admins/group owners do not need these commands.
  •`/gban <id> <reason>`*:* Gbans the user, works by reply too
  •`/ungban`*:* Ungbans the user, same usage as gban
  ╚ `/gbanlist`*:* Outputs a list of gbanned users
-
 Visit @{SUPPORT_CHAT} for more information.
 """
 
