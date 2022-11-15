@@ -356,9 +356,9 @@ def info(update: Update, context: CallbackContext):
         try:
             profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
             context.bot.sendChatAction(chat.id, "upload_photo")
-            context.bot.send_photo(
+            context.bot.send_animation(
                 chat.id,
-                photo=profile,
+                profile,
                 caption=(text),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.HTML,
