@@ -204,24 +204,25 @@ async def group_info(event) -> None:
             "Can't for some reason, maybe it is a private one or that I am banned there.",
         )
         return
-    msg = f"**ID**: `{entity.id}`"
-    msg += f"\n**Title**: `{entity.title}`"
-    msg += f"\n**Datacenter**: `{entity.photo.dc_id}`"
-    msg += f"\n**Video PFP**: `{entity.photo.has_video}`"
-    msg += f"\n**Supergroup**: `{entity.megagroup}`"
-    msg += f"\n**Restricted**: `{entity.restricted}`"
-    msg += f"\n**Scam**: `{entity.scam}`"
-    msg += f"\n**Slowmode**: `{entity.slowmode_enabled}`"
+   msg = f"**ɪᴅ**: `{entity.id}`"
+    msg += f"\n**ᴛɪᴛʟᴇ**: `{entity.title}`"
+    msg += f"\n**ᴅᴄ**: `{entity.photo.dc_id}`"
+    msg += f"\n**ᴠɪᴅᴇᴏ ᴩғᴩ**: `{entity.photo.has_video}`"
+    msg += f"\n**sᴜᴩᴇʀɢʀᴏᴜᴩ**: `{entity.megagroup}`"
+    msg += f"\n**ʀᴇsᴛʀɪᴄᴛᴇᴅ**: `{entity.restricted}`"
+    msg += f"\n**sᴄᴀᴍ**: `{entity.scam}`"
+    msg += f"\n**sʟᴏᴡᴍᴏᴅᴇ**: `{entity.slowmode_enabled}`"
     if entity.username:
-        msg += f"\n**Username**: {entity.username}"
-    msg += "\n\n**Member Stats:**"
-    msg += f"\n`Admins:` `{len(totallist)}`"
-    msg += f"\n`Users`: `{totallist.total}`"
-    msg += "\n\n**Admins List:**"
+        msg += f"\n**ᴜsᴇʀɴᴀᴍᴇ**: {entity.username}"
+    msg += "\n\n**ᴍᴇᴍʙᴇʀ sᴛᴀᴛs:**"
+    msg += f"\nᴀᴅᴍɪɴs: `{len(totallist)}`"
+    msg += f"\nᴜsᴇʀs: `{totallist.total}`"
+    msg += "\n\n**ᴀᴅᴍɪɴs ʟɪsᴛ:**"
     for x in totallist:
         msg += f"\n• [{x.id}](tg://user?id={x.id})"
-    msg += f"\n\n**Description**:\n`{ch_full.full_chat.about}`"
+    msg += f"\n\n**ᴅᴇsᴄʀɪᴩᴛɪᴏɴ**:\n`{ch_full.full_chat.about}`"
     await event.reply(msg)
+  
 
 
 def gifid(update: Update, context: CallbackContext):
@@ -272,7 +273,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>ᴀᴘᴘʀᴀɪsɪɴɢ...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"ㅤ ㅤㅤ      ✦ ᴜsᴇʀ ɪɴғᴏ ✦\n•❅─────✧❅✦❅✧─────❅•\n"
