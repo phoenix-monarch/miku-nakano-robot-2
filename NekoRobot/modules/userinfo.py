@@ -45,7 +45,7 @@ from NekoRobot.modules.sql.afk_sql import check_afk_status, is_afk
 from NekoRobot.modules.sql.global_bans_sql import is_user_gbanned
 from NekoRobot.modules.sql.users_sql import get_user_num_chats
 
-NEKO_IMG = "https://telegra.ph/file/a21731c0c4c7f27a3ec16.jpg"
+NEKO_IMG = "https://te.legra.ph/file/a29a71070275a508eae61.jpg"
 
 
 def no_by_per(totalhp, percentage):
@@ -204,24 +204,25 @@ async def group_info(event) -> None:
             "Can't for some reason, maybe it is a private one or that I am banned there.",
         )
         return
-   msg = f"**ɪᴅ**: `{entity.id}`"
-    msg += f"\n**ᴛɪᴛʟᴇ**: `{entity.title}`"
-    msg += f"\n**ᴅᴄ**: `{entity.photo.dc_id}`"
-    msg += f"\n**ᴠɪᴅᴇᴏ ᴩғᴩ**: `{entity.photo.has_video}`"
-    msg += f"\n**sᴜᴩᴇʀɢʀᴏᴜᴩ**: `{entity.megagroup}`"
-    msg += f"\n**ʀᴇsᴛʀɪᴄᴛᴇᴅ**: `{entity.restricted}`"
-    msg += f"\n**sᴄᴀᴍ**: `{entity.scam}`"
-    msg += f"\n**sʟᴏᴡᴍᴏᴅᴇ**: `{entity.slowmode_enabled}`"
+msg = f"**ID**: `{entity.id}`"
+    msg += f"\n**Title**: `{entity.title}`"
+    msg += f"\n**Datacenter**: `{entity.photo.dc_id}`"
+    msg += f"\n**Video PFP**: `{entity.photo.has_video}`"
+    msg += f"\n**Supergroup**: `{entity.megagroup}`"
+    msg += f"\n**Restricted**: `{entity.restricted}`"
+    msg += f"\n**Scam**: `{entity.scam}`"
+    msg += f"\n**Slowmode**: `{entity.slowmode_enabled}`"
     if entity.username:
-        msg += f"\n**ᴜsᴇʀɴᴀᴍᴇ**: {entity.username}"
-    msg += "\n\n**ᴍᴇᴍʙᴇʀ sᴛᴀᴛs:**"
-    msg += f"\nᴀᴅᴍɪɴs: `{len(totallist)}`"
-    msg += f"\nᴜsᴇʀs: `{totallist.total}`"
-    msg += "\n\n**ᴀᴅᴍɪɴs ʟɪsᴛ:**"
+        msg += f"\n**Username**: {entity.username}"
+    msg += "\n\n**Member Stats:**"
+    msg += f"\n`Admins:` `{len(totallist)}`"
+    msg += f"\n`Users`: `{totallist.total}`"
+    msg += "\n\n**Admins List:**"
     for x in totallist:
         msg += f"\n• [{x.id}](tg://user?id={x.id})"
-    msg += f"\n\n**ᴅᴇsᴄʀɪᴩᴛɪᴏɴ**:\n`{ch_full.full_chat.about}`"
+    msg += f"\n\n**Description**:\n`{ch_full.full_chat.about}`"
     await event.reply(msg)
+
   
 
 
@@ -356,13 +357,8 @@ def info(update: Update, context: CallbackContext):
     if INFOPIC:
         try:
             profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
-            context.bot.sendChatAction(chat.id, "upload_photo")
-            context.bot.send_photo(
-                chat.id,
-                photo=profile,
-                caption=(text),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.HTML,
+            _file = bot.get_file(profile["file_id"])
+            _file.download(f"{user.id}.png")
             )
         # Incase user don't have profile pic, send normal text
         except IndexError:
