@@ -50,7 +50,8 @@ Powered By:- @X_E_N_0_X
     BUTTON = [
         [
             Button.url("📢 Repository", "https://github.com/kazuyakun07/miku-nakano-robot45"),
-            Button.url("💻 wall", https://te.legra.ph/file/a29a71070275a508eae61.jpg""),
+            Button.url("💻 Collaborators", "https://telegra.ph/Neko-X-05-23"),
+        ]
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
