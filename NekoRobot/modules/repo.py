@@ -47,11 +47,10 @@ It's Fully stable Repo so you can deploy and make own Bot.
 Powered By:- @X_E_N_0_X
 """
 
-    BUTTON = [
+     BUTTON = [
         [
             Button.url("📢 Repository", "https://github.com/kazuyakun07/miku-nakano-robot45"),
             Button.url("💻 Collaborators", "https://telegra.ph/Neko-X-05-23"),
-        ]
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
