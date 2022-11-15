@@ -1,8 +1,8 @@
 """
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/kazuya07]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/kazuyakun07/miku-nakano-robot45 ]
+Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -34,9 +34,9 @@ PHOTO = "https://te.legra.ph/file/a29a71070275a508eae61.jpg"
 @register(pattern=("/repo"))
 async def awake(event):
     NEKO = """
-         We Are So Happy To Announce That We Have Public Our MikuRobot Repo. ✨🥀
+         We Are So Happy To Announce That We Have Public Our miku Robot Repo. ✨🥀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-「 @miku_management_bot 」
+「@miku_management_bot」
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 Here is the Repo Deploy your Own telegram bot.
 ⚜️Repo ➤ https://github.com/kazuyakun07/miku-nakano-robot45
@@ -44,10 +44,10 @@ Here is the Repo Deploy your Own telegram bot.
 🔰 Thanks for your support 
 It's Fully stable Repo so you can deploy and make own Bot.
 ──────────────────
-Powered By:- @X_E_N_0_X
+Powered By:- @cosmos_association
 """
 
-     BUTTON = [
+    BUTTON = [
         [
             Button.url("📢 Repository", "https://github.com/kazuyakun07/miku-nakano-robot45"),
             Button.url("💻 Collaborators", "https://telegra.ph/Neko-X-05-23"),
