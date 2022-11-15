@@ -242,10 +242,10 @@ def info(update: Update, context: CallbackContext):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Health", url="https://t.me/AsunaYuukiXUpdates/9"
+                text="ʜᴇᴀʟᴛʜ", url="https://t.me/AsunaYuukiXUpdates/9"
             ),
             InlineKeyboardButton(
-                text="Disasters", url="https://t.me/AsunaYuukiXUpdates/10"
+                text="ᴅɪsᴀsᴛᴇʀs", url="https://t.me/AsunaYuukiXUpdates/10"
             ),
         ],
     ]
@@ -281,9 +281,6 @@ def info(update: Update, context: CallbackContext):
     )
 
     if user.last_name:
-        text += f"\n• Last Name: {html.escape(user.last_name)}"
-
-    if user.last_name:
         text += f"\n➻ <b>ʟᴀsᴛ ɴᴀᴍᴇ:</b> {html.escape(user.last_name)}"
 
     if user.username:
@@ -308,7 +305,7 @@ def info(update: Update, context: CallbackContext):
                     text += _stext.format("Admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
+        text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
 
     try:
         spamwtc = sw.get_ban(int(user.id))
@@ -332,7 +329,7 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
     elif user.id == 5561111332:
-        text += "\n\nSenorita Is Girlfriend Of @Its_IZ_PRINCE_xD."
+        text += "\n\nSenorita Is Girlfriend Of @X_E_N_0_X."
 
     try:
         user_member = chat.get_member(user.id)
