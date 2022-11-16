@@ -139,7 +139,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="[► ʜᴇʟᴘ ◄]", callback_data="help_back"),
-        InlineKeyboardButton(text="❔ Chit Chat",
+        InlineKeyboardButton(text="Chit Chat",
                              url="https://telegram.dog/anime_discussion_chats"),
         InlineKeyboardButton(text="[► ɴᴇᴛᴡᴏʀᴋ ◄]",
                              url="https://telegram.dog/cosmos_association"),
