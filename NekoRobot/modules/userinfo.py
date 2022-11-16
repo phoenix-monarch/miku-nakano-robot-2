@@ -30,7 +30,6 @@ from NekoRobot import (
     INFOPIC,
     NEKO_PTB,
     OWNER_ID,
-    SUPPORT_CHAT,
     TIGERS,
     WOLVES,
     StartTime,
@@ -466,13 +465,7 @@ def stats(update, context):
             + "\n╘══「 by [ᴄᴏsᴍᴏs ɴᴇᴛᴡᴏʀᴋ](https://t.me/cosmos_association) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="Repo", url="https://t.me/devils_chats"
-                        )
-                    ]
-                ]
+                [[InlineKeyboardButton(text="Repo", url="https://t.me/devils_chats")]]
             ),
         )
     except BaseException:
@@ -489,13 +482,7 @@ def stats(update, context):
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="Repo", url="https://t.me/devils_chats"
-                        )
-                    ]
-                ]
+                [[InlineKeyboardButton(text="Repo", url="https://t.me/devils_chats")]]
             ),
         )
 

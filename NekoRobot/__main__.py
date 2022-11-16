@@ -60,8 +60,6 @@ from telegram.utils.helpers import escape_markdown
 
 import NekoRobot.modules.sql.users_sql as sql
 from NekoRobot import (
-    BOT_NAME,
-    BOT_USERNAME,
     DONATION_LINK,
     HELP_IMG,
     LOGGER,
@@ -108,6 +106,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+
 NEKO_STICKERS = (
     "CAACAgUAAxkBAAIIW2NL5v9F9hUom4xmsgNYb63SEfZZAAIZBgACYAF5VIerYoMcSln8KgQ",
     "CAACAgUAAxkBAAIIT2NL5tVmdAO3n1o3cp9Jic9LkqJvAAK7AgACoU3RVLpdwYfQPmS9KgQ",
@@ -135,20 +134,25 @@ buttons = [
     [
         InlineKeyboardButton(
             text="❄️ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ ❄️",
-            url="https://telegram.dog/miku_management_bot?startgroup=true")
+            url="https://telegram.dog/miku_management_bot?startgroup=true",
+        )
     ],
     [
         InlineKeyboardButton(text="[► ʜᴇʟᴘ ◄]", callback_data="help_back"),
-        InlineKeyboardButton(text="Chit Chat",
-                             url="https://telegram.dog/anime_discussion_chats"),
-        InlineKeyboardButton(text="[► ɴᴇᴛᴡᴏʀᴋ ◄]",
-                             url="https://telegram.dog/cosmos_association"),
+        InlineKeyboardButton(
+            text="Chit Chat", url="https://telegram.dog/anime_discussion_chats"
+        ),
+        InlineKeyboardButton(
+            text="[► ɴᴇᴛᴡᴏʀᴋ ◄]", url="https://telegram.dog/cosmos_association"
+        ),
     ],
     [
-        InlineKeyboardButton(text="🚑 sᴜᴘᴘᴏʀᴛ",
-                             url=f"https://telegram.dog/devils_chats"),
-        InlineKeyboardButton(text="📢 ᴜᴘᴅᴀᴛᴇs",
-                             url="https://telegram.dog/AsunaYuukiXUpdates")
+        InlineKeyboardButton(
+            text="🚑 sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/devils_chats"
+        ),
+        InlineKeyboardButton(
+            text="📢 ᴜᴘᴅᴀᴛᴇs", url="https://telegram.dog/AsunaYuukiXUpdates"
+        ),
     ],
 ]
 HELP_STRINGS = """
