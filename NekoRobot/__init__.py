@@ -39,10 +39,10 @@ from pyrogram import Client
 from pyrogram.enums import ParseMode
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, PeerIdInvalid
 from Python_ARQ import ARQ
+from redis import StrictRedis
 from telegraph import Telegraph
 from telethon import TelegramClient
 from telethon.sessions import MemorySession, StringSession
-from redis import StrictRedis
 
 StartTime = time.time()
 
@@ -154,7 +154,10 @@ if ENV:
     BOT_ID = 1412878118
     STRICT_GMUTE = bool(os.environ.get("STRICT_GMUTE", True))
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
-    REDIS_URL = os.environ.get("REDIS_URL", "redis://AranXSiesta:Aranxsiesta99@@redis-16318.c265.us-east-1-2.ec2.cloud.redislabs.com:16318/Hanma-free-db")
+    REDIS_URL = os.environ.get(
+        "REDIS_URL",
+        "redis://AranXSiesta:Aranxsiesta99@@redis-16318.c265.us-east-1-2.ec2.cloud.redislabs.com:16318/Hanma-free-db",
+    )
     REM_BG_API_KEY = os.environ.get(
         "REM_BG_API_KEY", None
     )  # From:- https://www.remove.bg/
@@ -293,7 +296,7 @@ pgram = Client(
     in_memory=True,
 )
 
-#-------Ishikki-Akabane
+# -------Ishikki-Akabane
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
 try:
@@ -308,9 +311,9 @@ except BaseException:
 
 finally:
 
-   REDIS.ping()
+    REDIS.ping()
 
-#------------------------------------------------------------------
+# ------------------------------------------------------------------
 
 print("[INFO]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
