@@ -42,6 +42,7 @@ from Python_ARQ import ARQ
 from telegraph import Telegraph
 from telethon import TelegramClient
 from telethon.sessions import MemorySession, StringSession
+from redis import StrictRedis
 
 StartTime = time.time()
 
@@ -153,6 +154,7 @@ if ENV:
     BOT_ID = 1412878118
     STRICT_GMUTE = bool(os.environ.get("STRICT_GMUTE", True))
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+    REDIS_URL = os.environ.get("REDIS_URL", "redis://AranXSiesta:Aranxsiesta99@@redis-16318.c265.us-east-1-2.ec2.cloud.redislabs.com:16318/Hanma-free-db")
     REM_BG_API_KEY = os.environ.get(
         "REM_BG_API_KEY", None
     )  # From:- https://www.remove.bg/
@@ -290,6 +292,26 @@ pgram = Client(
     sleep_threshold=60,
     in_memory=True,
 )
+
+#-------Ishikki-Akabane
+REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
+
+try:
+
+    REDIS.ping()
+
+    LOGGER.info("[ISHIKKI]: Connecting To Redis Database")
+
+except BaseException:
+
+    raise Exception("[ERROR]: Your Redis Database Is Not Alive, Please Check Again.")
+
+finally:
+
+   REDIS.ping()
+
+#------------------------------------------------------------------
+
 print("[INFO]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
 # ARQ Client
