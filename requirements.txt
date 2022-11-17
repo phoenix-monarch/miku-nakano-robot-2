@@ -90,3 +90,4 @@ base58
 httpx
 httpx[http2]
 async-timeout==4.0.2
+redis==3.5.3
