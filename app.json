@@ -22,17 +22,17 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": ""
+         "value": "5681953917:AAGrUba4BJ-ERjMpDKea09v6pkPIXtn8poo"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "14998189"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "982618d72ec545b1fa7fcca30fd96a65"
       },
        "STRING_SESSION": {
          "description": "Telethon Based String Session (2nd ID) [ From https://repl.it/@SpEcHiDe/GenerateStringSession ]",
@@ -47,12 +47,12 @@
       "BOT_NAME": {
          "description": "Your Bot Name.",
          "required": true,
-         "value": "Neko X"
+         "value": "ᴍɪᴋᴜ ɴᴀᴋᴀɴᴏ 宠儿"
       },
       "BOT_USERNAME": {
          "description": "Your Bot UserName Without @.",
          "required": true,
-         "value": "NekoCuteBot"
+         "value": "miku_management_bot"
       },
       "ERROR_LOGS": {
          "description": "Error Logs (Channel Ya Group Choice Is Yours)",
